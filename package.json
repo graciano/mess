@@ -1,5 +1,5 @@
 {
-  "name": "mess",
+  "name": "mess-js",
   "version": "1.0.0",
   "description": "Messages extremely simple script - simple pure javascript user message package",
   "main": "index.js",
