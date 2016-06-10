@@ -1,6 +1,6 @@
 {
   "name": "mess-js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Messages extremely simple script - simple pure javascript user message package",
   "main": "index.js",
   "scripts": {
