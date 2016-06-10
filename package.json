@@ -1,0 +1,33 @@
+{
+  "name": "mess",
+  "version": "1.0.0",
+  "description": "Messages extremely simple script - simple pure javascript user message package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/graciano/mess.git"
+  },
+  "keywords": [
+    "message",
+    "javascript",
+    "vanilla",
+    "pure",
+    "javascript",
+    "messages",
+    "simple",
+    "light"
+  ],
+  "author": "graciano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/graciano/mess/issues"
+  },
+  "homepage": "https://github.com/graciano/mess#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0"
+  }
+}
