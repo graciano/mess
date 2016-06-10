@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mess - Messages extremely simple script - simple pure javascript user message package</title>
+    <style>
+        #content{
+            margin: auto;
+            text-align: center;
+            width: 800px;
+        }
+        pre{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <section id="content">
+        <h1>mess</h1>
+
+        <pre id="example-code"></pre>
+
+        <button id="show-message">Click me!</button>
+        <h2>I'm gonna be on bower, npm and stuff</h2>
+    </section>
+    <script src="src/mess.js"></script>
+    <script>
+        window.onload = function(){
+            //call this mess
+            var mess = new Mess({
+                //initial message (if not used, nothing happens feijoada)
+                message: "I'm shown when the page loads"
+            });
+            mess.init();
+
+            var button = document.getElementById('show-message');
+            button.addEventListener('click', function(){
+                //this is the method you'll call when, let's say a ajax request is complete, or whatever
+                mess.show("I'm shown when the button is clicked.");
+            });
+
+            //show myself as example code
+            var exampleCode = document.getElementById('example-code');
+            exampleCode.textContent = this.onload;
+        };
+    </script>
+</body>
+</html>

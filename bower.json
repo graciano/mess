@@ -1,0 +1,29 @@
+{
+  "name": "mess",
+  "homepage": "https://github.com/graciano/mess",
+  "authors": [
+    "Matheus Graciano (pc-beta) <graciano.dev@gmail.com>"
+  ],
+  "description": "Messages extremely simple script - simple pure javascript user message package",
+  "main": "src/mess.js",
+  "keywords": [
+    "js",
+    "pure",
+    "js",
+    "vanilla",
+    "js",
+    "javascript",
+    "message",
+    "messages",
+    "frontend"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "index.html",
+    "tests"
+  ]
+}
