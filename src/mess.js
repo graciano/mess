@@ -6,7 +6,7 @@ function Mess(options){
 }
 
 Mess.prototype.init = function() {
-    window.mess = this;
+    window.mess = window.mess === undefined? this : window.mess;
     this.style.backgroundColor  = this.style.backgroundColor || 'rgba(0, 0, 0, 0.8)';
     this.style.boxSizing        = this.style.boxSizing || 'border-box';
     this.style.bottom           = this.style.bottom || 0;
@@ -17,17 +17,19 @@ Mess.prototype.init = function() {
     this.style.position         = this.style.position || 'absolute';
     this.style.transform        = this.style.transform || 'translate(-50%, 0)';
 
-    var messElem = document.createElement('span');
+    var alreadyAdded = document.getElementById('mess-messElement') !== null;
+    var messElem = alreadyAdded? document.getElementById('mess-messElement') : document.createElement('span');
     messElem.id = "mess-messElement";
 
     for(var property in this.style){
         if(Object.prototype.hasOwnProperty.call(this.style, property))
             messElem.style[property] = this.style[property];
     }
-
-    document.body.appendChild(messElem);
+    if(!alreadyAdded)
+        document.body.appendChild(messElem);
     this.messElem = messElem;
-    if(this.message){
+    if(this.message != undefined && this.message){
+        console.log(this.message);
         messElem.textContent = this.message;
         this.fadeIn();
     }
