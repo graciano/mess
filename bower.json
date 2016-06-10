@@ -1,5 +1,6 @@
 {
   "name": "mess",
+  "version": "1.0.0",
   "homepage": "https://github.com/graciano/mess",
   "authors": [
     "Matheus Graciano (pc-beta) <graciano.dev@gmail.com>"
