@@ -7,6 +7,8 @@ Messages extremely simple script - simple pure javascript user message package
 [![GitHub release](https://img.shields.io/github/release/graciano/mess.svg)](https://github.com/graciano/gess/releases)
 [![npm](https://img.shields.io/npm/dt/mess-js.svg)]()
 
+Install with `npm install mess-js` or `bower install mess`
+
 Show fade in dialog messages with javascript, like in the gif
 ![gif](https://media.giphy.com/media/26n6I9YWg3GjjjfY4/giphy.gif)
 
